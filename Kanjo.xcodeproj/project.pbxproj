@@ -21,6 +21,24 @@
 		8EB57C401911FF90001D115E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C221911FF90001D115E /* UIKit.framework */; };
 		8EB57C481911FF90001D115E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C461911FF90001D115E /* InfoPlist.strings */; };
 		8EB57C4A1911FF90001D115E /* KanjoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C491911FF90001D115E /* KanjoTests.m */; };
+		8EB57C5A19120819001D115E /* CALayer+UIHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C5919120819001D115E /* CALayer+UIHelper.m */; };
+		8EB57C6019120822001D115E /* UIColor+ColorPallete.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C5E19120822001D115E /* UIColor+ColorPallete.m */; };
+		8EB57C6919120831001D115E /* UIBezierPath-Smoothing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C6219120831001D115E /* UIBezierPath-Smoothing.m */; };
+		8EB57C6A19120831001D115E /* UIBezierPath-Bounding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C6419120831001D115E /* UIBezierPath-Bounding.m */; };
+		8EB57C6B19120831001D115E /* UIBezierPath-Fitting.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C6619120831001D115E /* UIBezierPath-Fitting.m */; };
+		8EB57C6C19120831001D115E /* UIBezierPath-Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C6819120831001D115E /* UIBezierPath-Points.m */; };
+		8EB57C77191208A5001D115E /* ProximaNova-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C6F191208A5001D115E /* ProximaNova-Black.otf */; };
+		8EB57C78191208A5001D115E /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C70191208A5001D115E /* ProximaNova-Bold.otf */; };
+		8EB57C79191208A5001D115E /* ProximaNova-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C71191208A5001D115E /* ProximaNova-Light.otf */; };
+		8EB57C7A191208A5001D115E /* ProximaNova-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C72191208A5001D115E /* ProximaNova-Regular.otf */; };
+		8EB57C7B191208A5001D115E /* ProximaNova-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C73191208A5001D115E /* ProximaNova-Semibold.otf */; };
+		8EB57C7C191208A5001D115E /* ProximaNovaCond-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C74191208A5001D115E /* ProximaNovaCond-Light.otf */; };
+		8EB57C7D191208A5001D115E /* ProximaNovaCond-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C75191208A5001D115E /* ProximaNovaCond-Regular.otf */; };
+		8EB57C7E191208A5001D115E /* ProximaNovaCond-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C76191208A5001D115E /* ProximaNovaCond-Semibold.otf */; };
+		8EB57C81191209A1001D115E /* KJNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C80191209A1001D115E /* KJNavBar.m */; };
+		8EB57C85191209D6001D115E /* KJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C84191209D6001D115E /* KJNavigationController.m */; };
+		8EB57C8919120A21001D115E /* CameraCaptureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C8819120A21001D115E /* CameraCaptureManager.m */; };
+		8EB57C8D19120A51001D115E /* FXLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C8C19120A51001D115E /* FXLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +71,34 @@
 		8EB57C451911FF90001D115E /* KanjoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "KanjoTests-Info.plist"; sourceTree = "<group>"; };
 		8EB57C471911FF90001D115E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EB57C491911FF90001D115E /* KanjoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KanjoTests.m; sourceTree = "<group>"; };
+		8EB57C5819120819001D115E /* CALayer+UIHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIHelper.h"; sourceTree = "<group>"; };
+		8EB57C5919120819001D115E /* CALayer+UIHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIHelper.m"; sourceTree = "<group>"; };
+		8EB57C5D19120822001D115E /* UIColor+ColorPallete.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorPallete.h"; sourceTree = "<group>"; };
+		8EB57C5E19120822001D115E /* UIColor+ColorPallete.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorPallete.m"; sourceTree = "<group>"; };
+		8EB57C6119120831001D115E /* UIBezierPath-Smoothing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Smoothing.h"; sourceTree = "<group>"; };
+		8EB57C6219120831001D115E /* UIBezierPath-Smoothing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Smoothing.m"; sourceTree = "<group>"; };
+		8EB57C6319120831001D115E /* UIBezierPath-Bounding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Bounding.h"; sourceTree = "<group>"; };
+		8EB57C6419120831001D115E /* UIBezierPath-Bounding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Bounding.m"; sourceTree = "<group>"; };
+		8EB57C6519120831001D115E /* UIBezierPath-Fitting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Fitting.h"; sourceTree = "<group>"; };
+		8EB57C6619120831001D115E /* UIBezierPath-Fitting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Fitting.m"; sourceTree = "<group>"; };
+		8EB57C6719120831001D115E /* UIBezierPath-Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Points.h"; sourceTree = "<group>"; };
+		8EB57C6819120831001D115E /* UIBezierPath-Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Points.m"; sourceTree = "<group>"; };
+		8EB57C6F191208A5001D115E /* ProximaNova-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Black.otf"; sourceTree = "<group>"; };
+		8EB57C70191208A5001D115E /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		8EB57C71191208A5001D115E /* ProximaNova-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Light.otf"; sourceTree = "<group>"; };
+		8EB57C72191208A5001D115E /* ProximaNova-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.otf"; sourceTree = "<group>"; };
+		8EB57C73191208A5001D115E /* ProximaNova-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Semibold.otf"; sourceTree = "<group>"; };
+		8EB57C74191208A5001D115E /* ProximaNovaCond-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Light.otf"; sourceTree = "<group>"; };
+		8EB57C75191208A5001D115E /* ProximaNovaCond-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Regular.otf"; sourceTree = "<group>"; };
+		8EB57C76191208A5001D115E /* ProximaNovaCond-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNovaCond-Semibold.otf"; sourceTree = "<group>"; };
+		8EB57C7F191209A1001D115E /* KJNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJNavBar.h; sourceTree = "<group>"; };
+		8EB57C80191209A1001D115E /* KJNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJNavBar.m; sourceTree = "<group>"; };
+		8EB57C83191209D6001D115E /* KJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJNavigationController.h; sourceTree = "<group>"; };
+		8EB57C84191209D6001D115E /* KJNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJNavigationController.m; sourceTree = "<group>"; };
+		8EB57C8719120A21001D115E /* CameraCaptureManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraCaptureManager.h; sourceTree = "<group>"; };
+		8EB57C8819120A21001D115E /* CameraCaptureManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraCaptureManager.m; sourceTree = "<group>"; };
+		8EB57C8B19120A51001D115E /* FXLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXLabel.h; sourceTree = "<group>"; };
+		8EB57C8C19120A51001D115E /* FXLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXLabel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +160,10 @@
 			children = (
 				8EB57C2D1911FF90001D115E /* KJAppDelegate.h */,
 				8EB57C2E1911FF90001D115E /* KJAppDelegate.m */,
-				8EB57C301911FF90001D115E /* Main.storyboard */,
+				8EB57C82191209A7001D115E /* Navigation Controller */,
 				8EB57C331911FF90001D115E /* KJViewController.h */,
 				8EB57C341911FF90001D115E /* KJViewController.m */,
+				8EB57C301911FF90001D115E /* Main.storyboard */,
 				8EB57C361911FF90001D115E /* Images.xcassets */,
 				8EB57C251911FF90001D115E /* Supporting Files */,
 			);
@@ -126,6 +173,8 @@
 		8EB57C251911FF90001D115E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8EB57C6D1912088A001D115E /* Resources */,
+				8EB57C53191207DD001D115E /* Helper Classes */,
 				8EB57C261911FF90001D115E /* Kanjo-Info.plist */,
 				8EB57C271911FF90001D115E /* InfoPlist.strings */,
 				8EB57C2A1911FF90001D115E /* main.m */,
@@ -150,6 +199,103 @@
 				8EB57C461911FF90001D115E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8EB57C53191207DD001D115E /* Helper Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C8A19120A41001D115E /* FXLabel */,
+				8EB57C54191207EF001D115E /* Categories */,
+			);
+			name = "Helper Classes";
+			sourceTree = "<group>";
+		};
+		8EB57C54191207EF001D115E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C571912080C001D115E /* UIBezierPath */,
+				8EB57C5619120804001D115E /* UIColor */,
+				8EB57C55191207FB001D115E /* CALayer */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		8EB57C55191207FB001D115E /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C5819120819001D115E /* CALayer+UIHelper.h */,
+				8EB57C5919120819001D115E /* CALayer+UIHelper.m */,
+			);
+			name = CALayer;
+			sourceTree = "<group>";
+		};
+		8EB57C5619120804001D115E /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C5D19120822001D115E /* UIColor+ColorPallete.h */,
+				8EB57C5E19120822001D115E /* UIColor+ColorPallete.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		8EB57C571912080C001D115E /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C6119120831001D115E /* UIBezierPath-Smoothing.h */,
+				8EB57C6219120831001D115E /* UIBezierPath-Smoothing.m */,
+				8EB57C6319120831001D115E /* UIBezierPath-Bounding.h */,
+				8EB57C6419120831001D115E /* UIBezierPath-Bounding.m */,
+				8EB57C6519120831001D115E /* UIBezierPath-Fitting.h */,
+				8EB57C6619120831001D115E /* UIBezierPath-Fitting.m */,
+				8EB57C6719120831001D115E /* UIBezierPath-Points.h */,
+				8EB57C6819120831001D115E /* UIBezierPath-Points.m */,
+			);
+			name = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		8EB57C6D1912088A001D115E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C6E19120898001D115E /* Fonts */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		8EB57C6E19120898001D115E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C6F191208A5001D115E /* ProximaNova-Black.otf */,
+				8EB57C70191208A5001D115E /* ProximaNova-Bold.otf */,
+				8EB57C71191208A5001D115E /* ProximaNova-Light.otf */,
+				8EB57C72191208A5001D115E /* ProximaNova-Regular.otf */,
+				8EB57C73191208A5001D115E /* ProximaNova-Semibold.otf */,
+				8EB57C74191208A5001D115E /* ProximaNovaCond-Light.otf */,
+				8EB57C75191208A5001D115E /* ProximaNovaCond-Regular.otf */,
+				8EB57C76191208A5001D115E /* ProximaNovaCond-Semibold.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
+		8EB57C82191209A7001D115E /* Navigation Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C8719120A21001D115E /* CameraCaptureManager.h */,
+				8EB57C8819120A21001D115E /* CameraCaptureManager.m */,
+				8EB57C7F191209A1001D115E /* KJNavBar.h */,
+				8EB57C80191209A1001D115E /* KJNavBar.m */,
+				8EB57C83191209D6001D115E /* KJNavigationController.h */,
+				8EB57C84191209D6001D115E /* KJNavigationController.m */,
+			);
+			name = "Navigation Controller";
+			sourceTree = "<group>";
+		};
+		8EB57C8A19120A41001D115E /* FXLabel */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C8B19120A51001D115E /* FXLabel.h */,
+				8EB57C8C19120A51001D115E /* FXLabel.m */,
+			);
+			name = FXLabel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,8 +376,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EB57C371911FF90001D115E /* Images.xcassets in Resources */,
+				8EB57C7A191208A5001D115E /* ProximaNova-Regular.otf in Resources */,
 				8EB57C291911FF90001D115E /* InfoPlist.strings in Resources */,
+				8EB57C77191208A5001D115E /* ProximaNova-Black.otf in Resources */,
 				8EB57C321911FF90001D115E /* Main.storyboard in Resources */,
+				8EB57C7C191208A5001D115E /* ProximaNovaCond-Light.otf in Resources */,
+				8EB57C78191208A5001D115E /* ProximaNova-Bold.otf in Resources */,
+				8EB57C79191208A5001D115E /* ProximaNova-Light.otf in Resources */,
+				8EB57C7E191208A5001D115E /* ProximaNovaCond-Semibold.otf in Resources */,
+				8EB57C7B191208A5001D115E /* ProximaNova-Semibold.otf in Resources */,
+				8EB57C7D191208A5001D115E /* ProximaNovaCond-Regular.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +404,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EB57C8D19120A51001D115E /* FXLabel.m in Sources */,
 				8EB57C351911FF90001D115E /* KJViewController.m in Sources */,
+				8EB57C8919120A21001D115E /* CameraCaptureManager.m in Sources */,
+				8EB57C6A19120831001D115E /* UIBezierPath-Bounding.m in Sources */,
+				8EB57C6019120822001D115E /* UIColor+ColorPallete.m in Sources */,
+				8EB57C6919120831001D115E /* UIBezierPath-Smoothing.m in Sources */,
+				8EB57C85191209D6001D115E /* KJNavigationController.m in Sources */,
 				8EB57C2B1911FF90001D115E /* main.m in Sources */,
+				8EB57C6B19120831001D115E /* UIBezierPath-Fitting.m in Sources */,
+				8EB57C6C19120831001D115E /* UIBezierPath-Points.m in Sources */,
 				8EB57C2F1911FF90001D115E /* KJAppDelegate.m in Sources */,
+				8EB57C81191209A1001D115E /* KJNavBar.m in Sources */,
+				8EB57C5A19120819001D115E /* CALayer+UIHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
