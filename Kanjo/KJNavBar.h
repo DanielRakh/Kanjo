@@ -10,7 +10,7 @@
 
 @class FXLabel;
 
-@interface KJNavBar : UIView
+@interface KJNavBar : UINavigationBar
 
 @property (nonatomic, strong) FXLabel *title;
 

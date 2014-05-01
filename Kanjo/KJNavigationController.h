@@ -10,4 +10,6 @@
 
 @interface KJNavigationController : UINavigationController
 
+@property (nonatomic, strong) UIView *previewView;
+
 @end

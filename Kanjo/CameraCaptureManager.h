@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 @import AVFoundation;
 
-@protocol CameraCaptureMangerDelegate <NSObject>
+@protocol CameraCaptureManagerDelegate <NSObject>
 
 - (void)cameraDidCaptureWithImage:(UIImage *)capturedImage;
 
@@ -23,7 +23,7 @@
 @property (strong, nonatomic) AVCaptureStillImageOutput *stillImageOutput;
 @property (strong, nonatomic) UIImage *imageToReturn;
 @property (assign, nonatomic) BOOL isRunning;
-@property (weak, nonatomic) id <CameraCaptureMangerDelegate> delegate;
+@property (weak, nonatomic) id <CameraCaptureManagerDelegate> delegate;
 
 - (id)initWithFrontCamera:(BOOL)shouldUseFrontCamera;
 
