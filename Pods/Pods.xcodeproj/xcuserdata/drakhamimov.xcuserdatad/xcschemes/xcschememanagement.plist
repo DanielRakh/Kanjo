@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-ILTranslucentView.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>26C973BEEE0E4332B5A58B0A</key>
+		<key>24923A47AAB94B539A999827</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5160480319944BFE9493FB67</key>
+		<key>4E2AFEABC8764E019E1B4900</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5F532782E35F467FB0C47066</key>
 		<dict>
 			<key>primary</key>
 			<true/>

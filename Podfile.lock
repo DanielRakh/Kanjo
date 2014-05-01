@@ -1,10 +1,13 @@
 PODS:
   - FXLabel (1.5.7)
+  - ILTranslucentView (0.0.1)
 
 DEPENDENCIES:
   - FXLabel (~> 1.5)
+  - ILTranslucentView (~> 0.0)
 
 SPEC CHECKSUMS:
   FXLabel: 8ba02eb8efb2ce37f04b06d18da424a45a215d6e
+  ILTranslucentView: 520b15548983d2370daf3c3e883a355ca82b6bf0
 
 COCOAPODS: 0.32.1
