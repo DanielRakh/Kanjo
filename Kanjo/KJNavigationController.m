@@ -8,12 +8,14 @@
 
 #import "KJNavigationController.h"
 #import "CameraCaptureManager.h"
+#import "ILTranslucentView.h"
 
 @import AVFoundation;
 
 @interface KJNavigationController ()
 
 @property (nonatomic, strong) CameraCaptureManager *cameraCaptureManager;
+@property (nonatomic, strong) ILTranslucentView *blurView;
 
 @end
 
@@ -33,6 +35,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setupCameraWithManager];
+    [self setupBlurView];
+    [self.view insertSubview:self.navigationBar atIndex:3];
 }
 
 
@@ -49,12 +53,25 @@
 -(void)setupCameraWithManager {
     
     self.cameraCaptureManager = [[CameraCaptureManager alloc]init];
-    self.previewView = [[UIView alloc]initWithFrame:self.view.bounds];
+    self.previewView = [[UIView alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.cameraCaptureManager.previewLayer.frame = self.previewView.bounds;
     [self.previewView.layer addSublayer:self.cameraCaptureManager.previewLayer];
     [self.view addSubview:self.previewView];
-    [self.view sendSubviewToBack:self.previewView];
+    [self.view insertSubview:self.previewView atIndex:1];
     
+}
+
+#pragma mark - Blur Methods
+
+-(void)setupBlurView {
+    self.blurView = [[ILTranslucentView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.blurView.translucentTintColor = [UIColor clearColor];
+    self.blurView.translucentStyle = UIBarStyleBlack;
+    self.blurView.backgroundColor = [UIColor clearColor];
+    self.blurView.translucentAlpha = 1.0f;
+    self.blurView.userInteractionEnabled = YES;
+    [self.view addSubview:self.blurView];
+    [self.view insertSubview:self.blurView atIndex:2];
 }
 
 
