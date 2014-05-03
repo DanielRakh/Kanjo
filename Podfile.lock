@@ -1,13 +1,16 @@
 PODS:
   - FXLabel (1.5.7)
   - ILTranslucentView (0.0.1)
+  - Reveal-iOS-SDK (1.0.3)
 
 DEPENDENCIES:
   - FXLabel (~> 1.5)
   - ILTranslucentView (~> 0.0)
+  - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
   FXLabel: 8ba02eb8efb2ce37f04b06d18da424a45a215d6e
   ILTranslucentView: 520b15548983d2370daf3c3e883a355ca82b6bf0
+  Reveal-iOS-SDK: 8e6a6f22a9520437e4a180fe1d4e99f43b75430e
 
 COCOAPODS: 0.32.1
