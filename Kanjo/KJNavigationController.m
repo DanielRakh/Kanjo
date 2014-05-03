@@ -9,6 +9,7 @@
 #import "KJNavigationController.h"
 #import "CameraCaptureManager.h"
 #import "ILTranslucentView.h"
+#import "KJNavBar.h"
 
 @import AVFoundation;
 
@@ -16,6 +17,7 @@
 
 @property (nonatomic, strong) CameraCaptureManager *cameraCaptureManager;
 @property (nonatomic, strong) ILTranslucentView *blurView;
+@property (weak, nonatomic) IBOutlet KJNavBar *navBar;
 
 @end
 
@@ -36,7 +38,8 @@
     // Do any additional setup after loading the view.
     [self setupCameraWithManager];
     [self setupBlurView];
-    [self.view insertSubview:self.navigationBar atIndex:3];
+    [self.view insertSubview:self.navBar atIndex:3];
+//    [self.view insertSubview:self.navigationBar atIndex:3];
 }
 
 
@@ -44,6 +47,11 @@
     [super viewWillAppear:animated];
     [self.cameraCaptureManager startCamera];
 
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
 }
 
 
@@ -57,7 +65,7 @@
     self.cameraCaptureManager.previewLayer.frame = self.previewView.bounds;
     [self.previewView.layer addSublayer:self.cameraCaptureManager.previewLayer];
     [self.view addSubview:self.previewView];
-    [self.view insertSubview:self.previewView atIndex:1];
+    [self.view insertSubview:self.previewView atIndex:0];
     
 }
 
@@ -71,7 +79,7 @@
     self.blurView.translucentAlpha = 1.0f;
     self.blurView.userInteractionEnabled = YES;
     [self.view addSubview:self.blurView];
-    [self.view insertSubview:self.blurView atIndex:2];
+    [self.view insertSubview:self.blurView atIndex:1];
 }
 
 

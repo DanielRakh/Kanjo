@@ -23,20 +23,16 @@
     return self;
 }
 
-- (id)initWithCoder:(NSCoder *)aDecoder {
-    
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        //
-        [self commonInit];
-    }
-    
-    return self;
+- (void)awakeFromNib {
+    [self commonInit];
 }
 
 - (void)commonInit {
     
-    self.barTintColor = [UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
+    [self createNavBarLine];
+    
+    
     
     //Draw Bottom Nav Bar
 //    CAGradientLayer *gradientLayer = [CAGradientLayer drawHorizontalGradientLineWithLength:self.bounds.size.width height:1.0f colors:@[[UIColor kanjoSpicyOrange], [UIColor kanjoSpicyPink]]];
@@ -54,6 +50,29 @@
 //    self.title.gradientStartPoint = CGPointMake(0.5, 0);
 //    self.title.gradientEndPoint = CGPointMake(0.5, 1);
 //    [self addSubview:self.title];
+}
+
+- (void)createNavBarLine {
+    
+    CAShapeLayer *lineShape = [CAShapeLayer layer];
+    lineShape.path = [self returnHorizontalLinePath].CGPath;
+    lineShape.bounds = CGPathGetPathBoundingBox([self returnHorizontalLinePath].CGPath);
+    lineShape.lineWidth = 0.5/[UIScreen mainScreen].scale;
+    lineShape.contentsScale = [UIScreen mainScreen].scale;
+    lineShape.fillColor = [UIColor clearColor].CGColor;
+    lineShape.strokeColor = [UIColor whiteColor].CGColor;
+    lineShape.anchorPoint = CGPointMake(0, 0);
+    lineShape.position = CGPointMake(0, CGRectGetHeight(self.bounds)-1.0f);
+    [self.layer addSublayer:lineShape];
+}
+
+- (UIBezierPath *)returnHorizontalLinePath {
+    
+    UIBezierPath *linePath = [UIBezierPath bezierPath];
+    [linePath moveToPoint:CGPointZero];
+    [linePath addLineToPoint:CGPointMake(self.bounds.size.width, 0)];
+    return linePath;
+    
 }
 
 /*
