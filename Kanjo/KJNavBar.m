@@ -29,7 +29,10 @@
 
 - (void)commonInit {
     
-    self.backgroundColor = [UIColor clearColor];
+    [self setBackgroundImage:[UIImage new]
+                             forBarMetrics:UIBarMetricsDefault];
+    self.shadowImage = [UIImage new];
+    self.translucent = YES;
     [self createNavBarLine];
     
     
