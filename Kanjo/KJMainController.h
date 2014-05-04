@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KJViewController : UIViewController
+@interface KJMainController : UIViewController
+
+@property (nonatomic, strong) UIView *testCircle;
 
 @end

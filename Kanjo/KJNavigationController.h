@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ILTranslucentView.h"
+
 
 @interface KJNavigationController : UINavigationController
 
 @property (nonatomic, strong) UIView *previewView;
+@property (nonatomic, strong) ILTranslucentView *blurView;
+
 
 @end

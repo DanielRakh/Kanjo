@@ -8,7 +8,6 @@
 
 #import "KJNavigationController.h"
 #import "CameraCaptureManager.h"
-#import "ILTranslucentView.h"
 #import "KJNavBar.h"
 
 @import AVFoundation;
@@ -16,7 +15,6 @@
 @interface KJNavigationController ()
 
 @property (nonatomic, strong) CameraCaptureManager *cameraCaptureManager;
-@property (nonatomic, strong) ILTranslucentView *blurView;
 @property (weak, nonatomic) IBOutlet KJNavBar *navBar;
 
 @end

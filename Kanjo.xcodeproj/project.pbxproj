@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		67227D084C1248AAB3636012 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB6D22833BCC4867AC16B74A /* libPods.a */; };
+		8E33229D1916CF4E00A6E72B /* KJCaptureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E33229C1916CF4E00A6E72B /* KJCaptureController.m */; };
+		8E3322A21916D11500A6E72B /* FaceCaptureAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E3322A11916D11500A6E72B /* FaceCaptureAnimator.m */; };
 		8EB57C1F1911FF90001D115E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C1E1911FF90001D115E /* Foundation.framework */; };
 		8EB57C211911FF90001D115E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C201911FF90001D115E /* CoreGraphics.framework */; };
 		8EB57C231911FF90001D115E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C221911FF90001D115E /* UIKit.framework */; };
@@ -15,7 +17,7 @@
 		8EB57C2B1911FF90001D115E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C2A1911FF90001D115E /* main.m */; };
 		8EB57C2F1911FF90001D115E /* KJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C2E1911FF90001D115E /* KJAppDelegate.m */; };
 		8EB57C321911FF90001D115E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C301911FF90001D115E /* Main.storyboard */; };
-		8EB57C351911FF90001D115E /* KJViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C341911FF90001D115E /* KJViewController.m */; };
+		8EB57C351911FF90001D115E /* KJMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB57C341911FF90001D115E /* KJMainController.m */; };
 		8EB57C371911FF90001D115E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EB57C361911FF90001D115E /* Images.xcassets */; };
 		8EB57C3E1911FF90001D115E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C3D1911FF90001D115E /* XCTest.framework */; };
 		8EB57C3F1911FF90001D115E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB57C1E1911FF90001D115E /* Foundation.framework */; };
@@ -53,6 +55,10 @@
 
 /* Begin PBXFileReference section */
 		738169B509674909A798881A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		8E33229B1916CF4E00A6E72B /* KJCaptureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KJCaptureController.h; sourceTree = "<group>"; };
+		8E33229C1916CF4E00A6E72B /* KJCaptureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KJCaptureController.m; sourceTree = "<group>"; };
+		8E3322A01916D11500A6E72B /* FaceCaptureAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceCaptureAnimator.h; sourceTree = "<group>"; };
+		8E3322A11916D11500A6E72B /* FaceCaptureAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FaceCaptureAnimator.m; sourceTree = "<group>"; };
 		8EB57C1B1911FF90001D115E /* Kanjo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kanjo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB57C1E1911FF90001D115E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EB57C201911FF90001D115E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -64,8 +70,8 @@
 		8EB57C2D1911FF90001D115E /* KJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJAppDelegate.h; sourceTree = "<group>"; };
 		8EB57C2E1911FF90001D115E /* KJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJAppDelegate.m; sourceTree = "<group>"; };
 		8EB57C311911FF90001D115E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8EB57C331911FF90001D115E /* KJViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJViewController.h; sourceTree = "<group>"; };
-		8EB57C341911FF90001D115E /* KJViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJViewController.m; sourceTree = "<group>"; };
+		8EB57C331911FF90001D115E /* KJMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KJMainController.h; sourceTree = "<group>"; };
+		8EB57C341911FF90001D115E /* KJMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KJMainController.m; sourceTree = "<group>"; };
 		8EB57C361911FF90001D115E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8EB57C3C1911FF90001D115E /* KanjoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanjoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB57C3D1911FF90001D115E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -126,6 +132,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E33229A1916CACD00A6E72B /* Main Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8EB57C331911FF90001D115E /* KJMainController.h */,
+				8EB57C341911FF90001D115E /* KJMainController.m */,
+			);
+			name = "Main Controller";
+			sourceTree = "<group>";
+		};
+		8E33229E1916D08200A6E72B /* Capture Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E33229B1916CF4E00A6E72B /* KJCaptureController.h */,
+				8E33229C1916CF4E00A6E72B /* KJCaptureController.m */,
+			);
+			name = "Capture Controller";
+			sourceTree = "<group>";
+		};
+		8E33229F1916D09E00A6E72B /* Transition Animators */ = {
+			isa = PBXGroup;
+			children = (
+				8E3322A01916D11500A6E72B /* FaceCaptureAnimator.h */,
+				8E3322A11916D11500A6E72B /* FaceCaptureAnimator.m */,
+			);
+			name = "Transition Animators";
+			sourceTree = "<group>";
+		};
 		8EB57C121911FF90001D115E = {
 			isa = PBXGroup;
 			children = (
@@ -164,8 +197,8 @@
 				8EB57C2D1911FF90001D115E /* KJAppDelegate.h */,
 				8EB57C2E1911FF90001D115E /* KJAppDelegate.m */,
 				8EB57C82191209A7001D115E /* Navigation Controller */,
-				8EB57C331911FF90001D115E /* KJViewController.h */,
-				8EB57C341911FF90001D115E /* KJViewController.m */,
+				8E33229A1916CACD00A6E72B /* Main Controller */,
+				8E33229E1916D08200A6E72B /* Capture Controller */,
 				8EB57C301911FF90001D115E /* Main.storyboard */,
 				8EB57C361911FF90001D115E /* Images.xcassets */,
 				8EB57C251911FF90001D115E /* Supporting Files */,
@@ -281,6 +314,7 @@
 		8EB57C82191209A7001D115E /* Navigation Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8E33229F1916D09E00A6E72B /* Transition Animators */,
 				8EB57C8719120A21001D115E /* CameraCaptureManager.h */,
 				8EB57C8819120A21001D115E /* CameraCaptureManager.m */,
 				8EB57C7F191209A1001D115E /* KJNavBar.h */,
@@ -432,9 +466,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EB57C351911FF90001D115E /* KJViewController.m in Sources */,
+				8EB57C351911FF90001D115E /* KJMainController.m in Sources */,
 				8EB57C8919120A21001D115E /* CameraCaptureManager.m in Sources */,
+				8E3322A21916D11500A6E72B /* FaceCaptureAnimator.m in Sources */,
 				8EB57C6A19120831001D115E /* UIBezierPath-Bounding.m in Sources */,
+				8E33229D1916CF4E00A6E72B /* KJCaptureController.m in Sources */,
 				8EB57C6019120822001D115E /* UIColor+ColorPallete.m in Sources */,
 				8EB57C6919120831001D115E /* UIBezierPath-Smoothing.m in Sources */,
 				8EB57C85191209D6001D115E /* KJNavigationController.m in Sources */,
