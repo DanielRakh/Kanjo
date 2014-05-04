@@ -12,7 +12,7 @@
 
 @interface KJNavBar : UINavigationBar
 
-@property (nonatomic, strong) FXLabel *title;
+@property (nonatomic, strong) FXLabel *customTitle;
 
 
 @end

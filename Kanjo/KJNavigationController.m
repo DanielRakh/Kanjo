@@ -39,6 +39,7 @@
     [self setupCameraWithManager];
     [self setupBlurView];
     [self.view insertSubview:self.navBar atIndex:3];
+
 }
 
 
