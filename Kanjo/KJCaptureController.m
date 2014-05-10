@@ -30,12 +30,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
     // Do any additional setup after loading the view.
-    self.faceCircle = [self createTestCircle];
-    
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(circleDidTap:)];
-    [self.faceCircle addGestureRecognizer:tapGesture];
-    
-    [self.view addSubview:self.faceCircle];
+    self.faceView = [[KJFaceView alloc]initWithFrame:self.view.bounds faceMode:FaceModeRegular];
     
 }
 
@@ -48,18 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (UIView *)createTestCircle {
-    
-    UIView *testCircle = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 140, 140)];
-    testCircle.layer.backgroundColor = [UIColor clearColor].CGColor;
-    testCircle.layer.borderColor = [UIColor redColor].CGColor;
-    testCircle.layer.borderWidth = 1.0f;
-    testCircle.layer.cornerRadius = testCircle.bounds.size.width/2.0f;
-    testCircle.center = CGPointMake(self.view.bounds.size.width/2.0, self.view.bounds.size.height/2.0f);
-    return testCircle;
-}
-
 
 /*
 #pragma mark - Navigation

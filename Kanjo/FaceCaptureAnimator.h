@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef NS_ENUM(NSInteger, AnimationType) {
+    AnimationTypePresent,
+    AnimationTypeDismiss
+};
+
 @interface FaceCaptureAnimator : NSObject <UIViewControllerAnimatedTransitioning>
 
 
 @property (nonatomic, assign) BOOL isPresenting;
+@property (nonatomic, assign) AnimationType animationType;
 
 @end

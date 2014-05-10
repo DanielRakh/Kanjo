@@ -9,6 +9,7 @@
 #import "FaceCaptureAnimator.h"
 #import "KJMainController.h"
 #import "KJCaptureController.h"
+#import "KJNavigationController.h"
 
 @implementation FaceCaptureAnimator
 
@@ -27,24 +28,26 @@
     
     UIViewController *fromVC = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     UIViewController *toVC = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+    KJMainController *mainController;
+    KJCaptureController *captureController;
+ 
+    if (self.animationType == AnimationTypePresent) {
+        mainController = (KJMainController *)fromVC;
+        captureController = (KJCaptureController *)toVC;
+        captureController.faceView.alpha = 0.0;
+        mainController.faceView.alpha = 0.0;
+    } else if (self.animationType == AnimationTypeDismiss){
+        mainController = (KJMainController *)toVC;
+        captureController = (KJCaptureController *)fromVC;
+    }
     
-//    if (self.isPresenting) {
-//        fromVC =  (KJMainController *)fromVC;
-//        toVC = (KJCaptureController *)toVC;
-//    } else {
-//        fromVC = (KJCaptureController *)fromVC;
-//        toVC =  (KJMainController *)toVC;
-//    }
-    
-    
-    
-
-    KJMainController *mainController = (KJMainController *)fromVC;
-    KJCaptureController *captureController = (KJCaptureController *)toVC;
+//    KJNavigationController *navController = (KJNavigationController *)mainController.navigationController;    
     
     UIView *containerView = [transitionContext containerView];
     [containerView addSubview:toVC.view];
-    captureController.faceCircle.alpha = 0.0;
+    
+    CAGradientLayer *faceGraident =  [mainController.faceView createFaceWithScale:0.3 atPosition:CGPointMake(containerView.bounds.size.width/2.0, CGRectGetHeight(containerView.bounds) - mainController.faceView.faceButton.bounds.size.height/2.0)];
+    [containerView.layer addSublayer:faceGraident];
     
     [UIView animateWithDuration:[self transitionDuration:transitionContext]
                           delay:0.0
@@ -52,12 +55,15 @@
           initialSpringVelocity:0.6
                         options:UIViewAnimationOptionCurveLinear
                      animations:^{
-                         mainController.testCircle.transform = CGAffineTransformMakeScale(2.0, 2.0);
-                         mainController.testCircle.center = containerView.center;
+                         faceGraident.affineTransform = CGAffineTransformMakeScale(3.0, 3.0);
+                         faceGraident.position = CGPointMake(containerView.bounds.size.width/2.0, containerView.bounds.size.height/2.0);
                      }
                      completion:^(BOOL finished) {
-                         captureController.faceCircle.alpha = 1.0;
+//                         captureController.faceView.alpha = 1.0;
+//                         [faceGraident removeFromSuperlayer];
                          [transitionContext completeTransition:YES];
+
+
                      }];
     
     

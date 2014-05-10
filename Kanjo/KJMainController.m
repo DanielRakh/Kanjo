@@ -10,10 +10,11 @@
 #import "KJNavigationController.h"
 #import "FaceCaptureAnimator.h"
 
-@interface KJMainController () <UINavigationControllerDelegate>
+@interface KJMainController () <UINavigationControllerDelegate, KJFaceViewDelegate>
 
 @property (nonatomic, strong) KJNavigationController *navController;
 @property (nonatomic, strong) FaceCaptureAnimator *animator;
+
 
 @end
 
@@ -26,20 +27,21 @@
     self.view.backgroundColor = [UIColor clearColor];
     
     self.navController = (KJNavigationController *)self.navigationController;
-    
-    self.testCircle = [self createTestCircle];
-    
-    UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(circleDidTap:)];
-    [self.testCircle addGestureRecognizer:tapGesture];
-    
-    [self.view addSubview:self.testCircle];
-    
     self.navigationController.delegate = self;
+    
+    self.faceView = [[KJFaceView alloc]initWithFrame:self.view.bounds faceMode:FaceModeButton];
+    self.faceView.delegate = self;
+    [self.view addSubview:self.faceView];
+    
+    
     self.animator = [[FaceCaptureAnimator alloc]init];
+    
     
 }
 
-- (void)circleDidTap:(UITapGestureRecognizer *)tapGesture {
+
+- (void)faceButtonDidTouch:(id)sender {
+    
     [self performSegueWithIdentifier:@"faceCaptureSegue" sender:self];
 }
 
@@ -48,6 +50,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
 - (IBAction)blurButtonDidTouch:(id)sender {
     
     CGFloat blurAlpha = self.navController.blurView.translucentAlpha == 1.0 ? 0.8 : 1.0;
@@ -56,19 +60,7 @@
                     self.navController.blurView.translucentAlpha = blurAlpha ;
                      }];
 }
-
-
-- (UIView *)createTestCircle {
-    
-    UIView *testCircle = [[UIView alloc]initWithFrame:CGRectMake(0, 0, 70, 70)];
-    testCircle.layer.backgroundColor = [UIColor clearColor].CGColor;
-    testCircle.layer.borderColor = [UIColor redColor].CGColor;
-    testCircle.layer.borderWidth = 1.0f;
-    testCircle.layer.cornerRadius = testCircle.bounds.size.width/2.0f;
-    testCircle.center = CGPointMake(self.view.bounds.size.width/2.0, CGRectGetHeight(self.view.bounds) - 50);
-    return testCircle;
-}
-
+ */
 
 #pragma mark - Navigation Controller Delegate 
 

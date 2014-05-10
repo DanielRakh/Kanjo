@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KJFaceView.h"
 
 @interface KJMainController : UIViewController
 
-@property (nonatomic, strong) UIView *testCircle;
+@property (nonatomic, strong) KJFaceView *faceView; 
 
 @end
